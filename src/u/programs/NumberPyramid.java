@@ -11,7 +11,7 @@ import java.util.Scanner;
 
 public interface NumberPyramid {
 
-    static @UseFul String fire (short lines) {
+    static @UseFul String fire_pyramid (short lines) {
 
         StringBuffer construct = new StringBuffer();
 
@@ -41,7 +41,7 @@ public interface NumberPyramid {
 
     }
 
-    static @UseFul void interactive () {
+    static @UseFul void interactive_pyramid () {
 
 
         Scanner input = new Scanner(System.in);
@@ -70,6 +70,52 @@ public interface NumberPyramid {
             System.out.println();
         }
 
+
+
+    }
+
+    static @UseFul String fire_cliff (byte lines) {
+
+    StringBuffer construct = new StringBuffer();
+
+        for (int row = 1; row <= lines; row++) {
+
+            for (int column = lines; column >= row; column--) {
+
+                construct.append(column).append(" ");
+
+
+            }
+
+            construct.append("\n");
+
+        }
+
+        return construct.toString();
+
+    }
+
+    static @UseFul void interactive_cliff () {
+
+
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter number of lines (Byte): ");
+        byte inp = input.nextByte();
+        System.out.println();
+
+
+        for (int row = 1; row <= inp; row++) {
+
+            for (int column = inp; column >= row; column--) {
+
+                System.out.print(column + " ");
+
+
+            }
+
+            System.out.println();
+
+        }
 
 
     }
