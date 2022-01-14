@@ -45,27 +45,20 @@ public @UseFul interface LoanCalculator {
 
     }
 
-    static @UseFul void fire (@NotNull @UseFul LOAN get, double amount, short years, double interest) {
+    static @UseFul int fire (@NotNull @UseFul LOAN get, double amount, short years, double interest) {
 
 
 
         double total = (amount * ((interest + 100) / 100));
         double monthly = ((total / years) / 12);
 
-        System.out.println("\n\n\n\n");
-        System.out.print(c.cy + "Total payment: ");
-        System.out.printf("%, d", (int)total);
-        System.out.print("\nMonthly payment: ");
-        System.out.printf("%, d", (int)monthly);
-        System.out.print(c.rs);
 
         if (get == LOAN.TOTAL_PAYMENT) {
-
+            return (int)total;
         } else {
-
+            return (int)monthly;
         }
 
-        return;
 
 
 
