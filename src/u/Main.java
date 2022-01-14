@@ -1,5 +1,8 @@
-/* Copyright (c) 2022, gemsvidø
-All rights reserved. */
+/*
+ * Copyright (c) 2022, gemsvidø
+ * All rights reserved.
+ */
+
 
 package u;
 

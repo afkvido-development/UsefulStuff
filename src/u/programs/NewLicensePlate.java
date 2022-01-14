@@ -1,13 +1,13 @@
-/* Copyright (c) 2022, gemsvidø
-All rights reserved. */
+/*
+ * Copyright (c) 2022, gemsvidø
+ * All rights reserved.
+ */
 
 package u.programs;
 
 import u.resources.UseFul;
 import u.resources.c;
-
 import java.util.Random;
-import java.util.Scanner;
 
 public @UseFul interface NewLicensePlate {
 
