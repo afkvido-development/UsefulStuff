@@ -1,3 +1,6 @@
+/* Copyright (c) 2022, gemsvidø
+All rights reserved. */
+
 package u.programs;
 
 import u.resources.UseFul;
@@ -8,7 +11,7 @@ import java.util.Scanner;
 
 public @UseFul interface NewLicensePlate {
 
-    static @UseFul void fire() {
+    static @UseFul String fire() {
 
         Random random = new Random();
 
@@ -116,12 +119,7 @@ public @UseFul interface NewLicensePlate {
                 throw new IllegalStateException("How did we get here?");
         }
 
-        System.out.println(c.bl +  "\n[" + c.cy + plate + c.bl + "]");
-
-
-        Scanner wait = new Scanner(System.in);
-        wait.nextLine();
-
+        return (c.bl +  "\n[" + c.cy + plate + c.bl + "]");
 
 
     }

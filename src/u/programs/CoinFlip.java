@@ -1,3 +1,6 @@
+/* Copyright (c) 2022, gemsvidø
+All rights reserved. */
+
 package u.programs;
 
 import u.resources.UseFul;
@@ -90,6 +93,7 @@ public @UseFul interface CoinFlip {
         System.out.print(c.yw + "How many coins are you flipping? ");
         int flips = sc.nextInt();
         System.out.println(c.pr + "Flipping " + c.cy + flips + c.pr + " coins.");
+        massFlip(flips, true);
 
 
     }

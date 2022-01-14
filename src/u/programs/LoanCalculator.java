@@ -1,5 +1,10 @@
+/* Copyright (c) 2022, gemsvidø
+All rights reserved. */
+
 package u.programs;
 
+import org.jetbrains.annotations.NotNull;
+import u.resources.LOAN;
 import u.resources.UseFul;
 import u.resources.c;
 
@@ -7,7 +12,7 @@ import java.util.Scanner;
 
 public @UseFul interface LoanCalculator {
 
-    static @UseFul void fire() {
+    static @UseFul void interactive() {
 
 
         System.out.println(c.wh + "\nLoan Calculator - made by gemsvidø");
@@ -34,6 +39,33 @@ public @UseFul interface LoanCalculator {
 
         Scanner wait = new Scanner(System.in);
         wait.nextLine();
+
+
+
+
+    }
+
+    static @UseFul void fire (@NotNull @UseFul LOAN get, double amount, short years, double interest) {
+
+
+
+        double total = (amount * ((interest + 100) / 100));
+        double monthly = ((total / years) / 12);
+
+        System.out.println("\n\n\n\n");
+        System.out.print(c.cy + "Total payment: ");
+        System.out.printf("%, d", (int)total);
+        System.out.print("\nMonthly payment: ");
+        System.out.printf("%, d", (int)monthly);
+        System.out.print(c.rs);
+
+        if (get == LOAN.TOTAL_PAYMENT) {
+
+        } else {
+
+        }
+
+        return;
 
 
 

@@ -1,3 +1,6 @@
+/* Copyright (c) 2022, gemsvidø
+All rights reserved. */
+
 package u.programs;
 
 import u.resources.UseFul;
@@ -6,7 +9,7 @@ import u.resources.Rectangle;
 import java.util.Scanner;
 
 
-public @UseFul interface RectangleTest {
+public @UseFul interface RectangleTest_Interactive {
 
 
     static @UseFul void fromWidthAndHeight() {
